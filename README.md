@@ -15,7 +15,7 @@ d.	Instalar plugin en VS Code: Playwright test for VS Code
 
 1. **Clonar el repositorio**
    ```bash
-   git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/Orlando9823/TestPlaywrighyInetum.git)
+   git clone [https://github.com/Orlando9823/TestPlaywrighyInetum.git]
    
 ## Ejecución de tests con npm
    ```bash
