@@ -50,7 +50,7 @@ let nombreEncontrado = false;
 
 for (let i = 0; i < numeroDivs; i++) {
   const divText = await divs.nth(i).textContent();
-  if (divText?.includes('429')) {
+  if (divText?.includes('417')) {
     nombreEncontrado = true;
     break;
   }

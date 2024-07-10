@@ -29,9 +29,11 @@ test('crear empleado', async ({ page }) => {
 
   await expect(page.locator('.orangehrm-main-title')).toBeVisible();
 
+  await page.waitForTimeout(4000);
+
   // Click the submit button to trigger upload
   const imagen = await page.locator('input[type="file"]');
-  await imagen.setInputFiles("C:\\Users\\ovalencia\\Documents\\PlayWrightLogueo\\IMG\\usuario.jpg");
+  await imagen.setInputFiles("IMG\\usuario.jpg");
 
   const txtFirstName = await page.waitForSelector('xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[1]/div/div/div[2]/div[1]/div[2]/input');
   await txtFirstName.fill("Orlando");
