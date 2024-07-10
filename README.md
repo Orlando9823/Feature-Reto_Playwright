@@ -17,4 +17,4 @@ d.	Instalar plugin en VS Code: Playwright test for VS Code
    
 ## Ejecución de tests con npm
    ```bash
-   npm run test
+   npx playwright test
