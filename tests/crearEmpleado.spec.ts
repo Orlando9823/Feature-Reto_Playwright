@@ -74,7 +74,6 @@ test('crear empleado', async ({ page }) => {
   const btnSave = await page.waitForSelector('xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div/form/div[2]/button[2]');
   await btnSave.click();
 
-  //await expect(page.locator('.orangehrm-horizontal-padding > .oxd-text--h6')).toBeVisible({ timeout: 10000 });
   // Esperar a que el elemento sea visible con un tiempo de espera aumentado
   const locator = page.locator('.orangehrm-horizontal-padding > .oxd-text--h6');
   await page.waitForSelector('.orangehrm-horizontal-padding > .oxd-text--h6', { timeout: 10000 });
